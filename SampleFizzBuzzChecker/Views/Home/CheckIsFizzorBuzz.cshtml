@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "CheckIsFizzorBuzz";
+}
+
+<h2>CheckIsFizz or Buzz</h2>
+
+
+
+<div class="bg-info">
+
+    @ViewBag.Result
+</div>
+
+
+@using (Html.BeginForm("CheckIsFizzorBuzz", "Home"))
+{
+    <input type="text" id="testinput" name="i" />
+
+    <input type="submit" value="CheckIsFizzorBuzz" />
+}
+
